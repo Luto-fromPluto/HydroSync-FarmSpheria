@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why Hydroponics? | HydroSync — The Future of Farming</title>
+  <meta name="description" content="Discover why hydroponics is the future of sustainable agriculture. 90% less water, 3× faster growth, zero pesticides, 365 days a year. Join HydroSync today." />
+  <meta name="keywords" content="hydroponics, sustainable farming, HydroSync, agriculture technology, vertical farming" />
+  <meta name="author" content="HydroSync" />
+  <meta name="theme-color" content="#0a0f0d" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor-glow-element" id="cursorGlow"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <!-- ============ LOADING SCREEN ============ -->
+  <div id="loader">
+    <div class="loader-spinner"></div>
+    <p class="loader-text">Growing something amazing…</p>
+  </div>
+
+  <!-- ============ READING PROGRESS BAR ============ -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- ============ CURSOR GLOW ============ -->
+  <div id="cursor-glow"></div>
+
+  <!-- ============ ANIMATED GRID BACKGROUND ============ -->
+  <div class="grid-bg"></div>
+
+  <!-- ============ FLOATING PARTICLES ============ -->
+  <div class="particles" id="particles"></div>
+
+  <!-- ============ MAIN CONTENT ============ -->
+  <div class="main-content">
+
+    <!-- ======== NAVIGATION ======== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-logo">
+        <div class="nav-logo-icon">🌱</div>
+        <span class="nav-logo-text">HydroSync</span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#stats">Stats</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#compare">Compare</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <!-- ======== HERO ======== -->
+    <section class="hero" id="hero">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        The Future Is Soil-Free
+      </div>
+
+      <h1 class="hero-title">
+        Why <span class="highlight">Hydroponics</span><br />Changes Everything
+      </h1>
+
+      <p class="hero-subtitle">
+        Grow smarter, faster, and cleaner. Hydroponics isn't just a farming method — it's a revolution in food production that uses less water, zero soil, and delivers results all year round.
+      </p>
+
+      <div class="interactive-alert-badge">
+        <span class="pulsing-leaf">✨</span>
+        <span><strong>Interactive Experience:</strong> Hover over cards, explore the data, and watch the hydroponic magic come to life!</span>
+      </div>
+
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="smoothScroll('#benefits')">
+          Discover The Magic ✨
+        </button>
+        <button class="btn-secondary" onclick="smoothScroll('#stats')">
+          Explore the Data ↓
+        </button>
+      </div>
+
+      <div class="scroll-indicator">
+        <div class="mouse"></div>
+        <span>Scroll to explore</span>
+      </div>
+    </section>
+
+
+
+    <!-- ======== STATS SECTION ======== -->
+    <section class="stats-section" id="stats">
+      <div class="section-inner">
+        <div class="reveal">
+          <span class="section-badge">By The Numbers</span>
+          <h2 class="section-title">The Hard <span class="green">Data</span></h2>
+          <p class="section-description">
+            Hydroponics isn't hype — it's backed by science. Here are the numbers that make traditional farming look outdated.
+          </p>
+        </div>
+
+        <div class="stats-grid reveal-stagger" id="statsGrid">
+          <!-- STAT 1 -->
+          <div class="stat-card glow-card">
+            <div class="stat-icon">💧</div>
+            <div class="stat-number" data-target="90" data-suffix="%" data-counted="false">
+              0<span class="stat-suffix">%</span>
+            </div>
+            <div class="stat-label">Less Water</div>
+            <div class="stat-desc">Recirculating nutrient systems use a fraction of the water traditional soil farming demands.</div>
+          </div>
+
+          <!-- STAT 2 -->
+          <div class="stat-card glow-card">
+            <div class="stat-icon">🚀</div>
+            <div class="stat-number" data-target="3" data-suffix="×" data-counted="false">
+              0<span class="stat-suffix">×</span>
+            </div>
+            <div class="stat-label">Faster Growth</div>
+            <div class="stat-desc">Direct nutrient delivery to roots accelerates plant growth dramatically versus soil.</div>
+          </div>
+
+          <!-- STAT 3 -->
+          <div class="stat-card glow-card">
+            <div class="stat-icon">🛡️</div>
+            <div class="stat-number" data-target="0" data-suffix="" data-counted="false">
+              0
+            </div>
+            <div class="stat-label">Pesticides Used</div>
+            <div class="stat-desc">Controlled indoor environments eliminate the need for harmful chemical pesticides entirely.</div>
+          </div>
+
+          <!-- STAT 4 -->
+          <div class="stat-card glow-card">
+            <div class="stat-icon">📅</div>
+            <div class="stat-number" data-target="365" data-suffix=" days" data-counted="false">
+              0<span class="stat-suffix"> days</span>
+            </div>
+            <div class="stat-label">Year-Round Harvest</div>
+            <div class="stat-desc">No seasons, no weather dependency. Grow fresh produce every single day of the year.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== INTERACTIVE GROW LAB SECTION ======== -->
+    <section class="grow-lab-section" id="growLab">
+      <div class="section-inner">
+        <h2 class="section-title reveal">Interactive <span class="highlight">Grow Lab</span></h2>
+        <p class="section-subtitle reveal">Take command of the microclimate. Adjust parameters to see how HydroSync adapts in real-time.</p>
+
+        <div class="lab-container reveal-stagger">
+          
+          <!-- Left Controls -->
+          <div class="lab-controls">
+            <div class="control-group">
+              <label>Photosynthetic Active Radiation (PAR) <span id="valLight" class="val-display">85%</span></label>
+              <input type="range" id="sliderLight" min="10" max="100" value="85" class="cyber-slider">
+            </div>
+            <div class="control-group">
+              <label>Nutrient Dosing (N-P-K) <span id="valNutrient" class="val-display">Optimal</span></label>
+              <input type="range" id="sliderNutrient" min="10" max="100" value="60" class="cyber-slider">
+            </div>
+            <div class="control-group">
+              <label>Water pH Level <span id="valPh" class="val-display">6.2</span></label>
+              <input type="range" id="sliderPh" min="40" max="85" value="62" class="cyber-slider">
+            </div>
+          </div>
+
+          <!-- Center Visualizer -->
+          <div class="lab-visualizer">
+            <div class="lab-plant-container">
+              <!-- Holographic CSS Plant -->
+              <div class="holo-plant" id="holoPlant">
+                <div class="holo-stem"></div>
+                <div class="holo-leaf leaf-left leaf-1"></div>
+                <div class="holo-leaf leaf-right leaf-2"></div>
+                <div class="holo-leaf leaf-left leaf-3"></div>
+                <div class="holo-leaf leaf-right leaf-4"></div>
+                <div class="holo-core-glow" id="holoGlow"></div>
+              </div>
+              <div class="holo-base">
+                <div class="holo-ring ring-1"></div>
+                <div class="holo-ring ring-2"></div>
+                <div class="holo-projector"></div>
+              </div>
+            </div>
+            <div class="lab-status-badge" id="labStatus">SYSTEM OPTIMAL</div>
+          </div>
+
+          <!-- Right Metrics -->
+          <div class="lab-metrics">
+            <div class="metric-card">
+              <h4>Projected Yield <span class="trend up">↗</span></h4>
+              <div class="metric-value highlight" id="metricYield">142 lbs</div>
+              <div class="metric-bar-container"><div class="metric-bar" id="barYield" style="width: 85%;"></div></div>
+            </div>
+            <div class="metric-card">
+              <h4>Growth Velocity <span class="trend up">↗</span></h4>
+              <div class="metric-value highlight" id="metricGrowth">3.2x</div>
+              <div class="metric-bar-container"><div class="metric-bar" id="barGrowth" style="width: 75%;"></div></div>
+            </div>
+            <div class="metric-card">
+              <h4>Crop Health <span class="trend flat">→</span></h4>
+              <div class="metric-value highlight" id="metricHealth">98%</div>
+              <div class="metric-bar-container"><div class="metric-bar" id="barHealth" style="width: 98%;"></div></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- ======== WAVY DIVIDER 2 ======== -->
+    <div class="wave-container wave-flipped">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <g class="parallax-waves">
+          <use href="#gentle-wave-1" x="48" y="0" class="wave-back" />
+          <use href="#gentle-wave-1" x="48" y="3" class="wave-mid" />
+          <use href="#gentle-wave-1" x="48" y="5" class="wave-front" />
+        </g>
+      </svg>
+    </div>
+
+    <!-- ======== BENEFITS SECTION ======== -->
+    <section class="benefits-section" id="benefits">
+      <div class="section-inner">
+        <div class="reveal">
+          <span class="section-badge">Why It Matters</span>
+          <h2 class="section-title">Beyond The <span class="green">Numbers</span></h2>
+          <p class="section-description">
+            Hydroponics solves problems that traditional agriculture simply can't. Here's why it matters for our future.
+          </p>
+        </div>
+
+        <div class="benefits-grid reveal-stagger">
+
+          <div class="benefit-card glow-card">
+            <div class="card-orb color-1"></div>
+            <div class="card-glass"></div>
+            <span class="card-number">01</span>
+            <div class="card-icon">🏙️</div>
+            <h3>Urban Farming Revolution</h3>
+            <p>Transform abandoned warehouses, rooftops, and basements into productive farms. Grow where people live, eliminating food miles and supply chain fragility.</p>
+          </div>
+
+          <div class="benefit-card glow-card">
+            <div class="card-orb color-2"></div>
+            <div class="card-glass"></div>
+            <span class="card-number">02</span>
+            <div class="card-icon">🔬</div>
+            <h3>Precision Nutrition</h3>
+            <p>Deliver the exact nutrient formula each plant needs at every growth stage. The result? Higher vitamin content, better taste, and consistent quality every harvest.</p>
+          </div>
+
+          <div class="benefit-card glow-card">
+            <div class="card-orb color-3"></div>
+            <div class="card-glass"></div>
+            <span class="card-number">03</span>
+            <div class="card-icon">🌍</div>
+            <h3>Climate Resilience</h3>
+            <p>Droughts, floods, and heatwaves don't affect indoor hydroponic farms. Build food security that withstands the climate crisis.</p>
+          </div>
+
+          <div class="benefit-card glow-card">
+            <div class="card-orb color-4"></div>
+            <div class="card-glass"></div>
+            <span class="card-number">04</span>
+            <div class="card-icon">📊</div>
+            <h3>10× Higher Yield</h3>
+            <p>Vertical stacking and optimized spacing mean hydroponic farms produce up to 10 times more food per square foot than conventional farms.</p>
+          </div>
+
+          <div class="benefit-card glow-card">
+            <div class="card-orb color-5"></div>
+            <div class="card-glass"></div>
+            <span class="card-number">05</span>
+            <div class="card-icon">♻️</div>
+            <h3>Zero Soil Erosion</h3>
+            <p>No soil means no topsoil depletion. Protect our planet's precious land resources while still feeding billions of people sustainably.</p>
+          </div>
+
+          <div class="benefit-card glow-card">
+            <div class="card-orb color-6"></div>
+            <div class="card-glass"></div>
+            <span class="card-number">06</span>
+            <div class="card-icon">⚡</div>
+            <h3>Energy Efficient</h3>
+            <p>Modern LED grow lights and automated systems cut energy costs dramatically. Solar-powered hydroponic farms are already a reality worldwide.</p>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== HOW IT WORKS — Timeline ======== -->
+    <section class="how-section" id="how">
+      <div class="section-inner">
+        <div class="reveal">
+          <span class="section-badge">The Process</span>
+          <h2 class="section-title">How <span class="green">Hydroponics</span> Works</h2>
+          <p class="section-description">
+            From seed to harvest in a controlled, soil-free environment. It's simpler than you think.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content step-1">
+              <div class="tl-corner tl-corner--tl"></div>
+              <div class="tl-corner tl-corner--tr"></div>
+              <div class="tl-corner tl-corner--bl"></div>
+              <div class="tl-corner tl-corner--br"></div>
+              <div class="tl-scanline"></div>
+              <div class="tl-step-badge">01</div>
+              <span class="timeline-step">Step 01</span>
+              <h3>Germinate Seeds</h3>
+              <p>Seeds are started in inert growing media like rockwool or coco coir. Within days, roots emerge ready for the hydroponic system.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content step-2">
+              <div class="tl-corner tl-corner--tl"></div>
+              <div class="tl-corner tl-corner--tr"></div>
+              <div class="tl-corner tl-corner--bl"></div>
+              <div class="tl-corner tl-corner--br"></div>
+              <div class="tl-scanline"></div>
+              <div class="tl-step-badge">02</div>
+              <span class="timeline-step">Step 02</span>
+              <h3>Nutrient Delivery</h3>
+              <p>A precisely mixed nutrient solution flows directly to plant roots via channels, drips, or aeroponic misting — no soil required.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content step-3">
+              <div class="tl-corner tl-corner--tl"></div>
+              <div class="tl-corner tl-corner--tr"></div>
+              <div class="tl-corner tl-corner--bl"></div>
+              <div class="tl-corner tl-corner--br"></div>
+              <div class="tl-scanline"></div>
+              <div class="tl-step-badge">03</div>
+              <span class="timeline-step">Step 03</span>
+              <h3>Optimized Environment</h3>
+              <p>Temperature, humidity, CO₂, and LED light spectrums are fine-tuned to maximize photosynthesis and accelerate growth rates.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content step-4">
+              <div class="tl-corner tl-corner--tl"></div>
+              <div class="tl-corner tl-corner--tr"></div>
+              <div class="tl-corner tl-corner--bl"></div>
+              <div class="tl-corner tl-corner--br"></div>
+              <div class="tl-scanline"></div>
+              <div class="tl-step-badge">04</div>
+              <span class="timeline-step">Step 04</span>
+              <h3>Monitor &amp; Adjust</h3>
+              <p>IoT sensors and AI algorithms continuously monitor pH, EC, dissolved oxygen, and nutrient levels — making real-time adjustments automatically.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content step-5">
+              <div class="tl-corner tl-corner--tl"></div>
+              <div class="tl-corner tl-corner--tr"></div>
+              <div class="tl-corner tl-corner--bl"></div>
+              <div class="tl-corner tl-corner--br"></div>
+              <div class="tl-scanline"></div>
+              <div class="tl-step-badge">05</div>
+              <span class="timeline-step">Step 05</span>
+              <h3>Harvest &amp; Repeat</h3>
+              <p>Crops are harvested at peak freshness. The system is cleaned, refilled, and replanted — maintaining a continuous, year-round production cycle.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== COMPARISON TABLE ======== -->
+    <section class="comparison-section" id="compare">
+      <div class="section-inner">
+        <div class="reveal">
+          <span class="section-badge">Head to Head</span>
+          <h2 class="section-title">Hydroponics vs. <span class="green">Traditional</span></h2>
+          <p class="section-description">
+            A side-by-side comparison that speaks for itself. The future is clear.
+          </p>
+        </div>
+
+        <div class="comparison-table-wrapper reveal-scale">
+          <!-- BATTLE SCORE TICKER -->
+          <div class="battle-score-bar">
+            <div class="score-side score-hydro">
+              <span class="score-label">🌱 Hydroponics</span>
+              <span class="score-count" id="hydroScore">0</span>
+            </div>
+            <div class="score-vs">⚡ VS ⚡</div>
+            <div class="score-side score-trad">
+              <span class="score-count" id="tradScore">0</span>
+              <span class="score-label">🌾 Traditional</span>
+            </div>
+          </div>
+
+          <table class="comparison-table" id="comparisonTable">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th class="hydro">
+                  <div class="crown-wrapper">
+                    <span class="crown-badge">👑</span>
+                  </div>
+                  🌱 Hydroponics
+                </th>
+                <th class="trad">🌾 Traditional Farming</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-advantage="90">
+                <td class="feat-cell">Water Usage</td>
+                <td class="win">90% less water</td>
+                <td class="lose">High — wasteful irrigation</td>
+              </tr>
+              <tr data-advantage="75">
+                <td class="feat-cell">Growth Speed</td>
+                <td class="win">Up to 3× faster</td>
+                <td class="lose">Standard — weather dependent</td>
+              </tr>
+              <tr data-advantage="100">
+                <td class="feat-cell">Pesticides</td>
+                <td class="win"><span class="check-icon">✓</span> Zero needed</td>
+                <td class="lose"><span class="cross-icon">✗</span> Heavily used</td>
+              </tr>
+              <tr data-advantage="85">
+                <td class="feat-cell">Land Required</td>
+                <td class="win">Minimal — vertical stacking</td>
+                <td class="lose">Massive acreage needed</td>
+              </tr>
+              <tr data-advantage="100">
+                <td class="feat-cell">Season</td>
+                <td class="win">365 days / year</td>
+                <td class="lose">Seasonal limitations</td>
+              </tr>
+              <tr data-advantage="92">
+                <td class="feat-cell">Yield per ft²</td>
+                <td class="win">Up to 10× higher</td>
+                <td class="lose">Limited by spacing</td>
+              </tr>
+              <tr data-advantage="100">
+                <td class="feat-cell">Soil Erosion</td>
+                <td class="win"><span class="check-icon">✓</span> No soil used</td>
+                <td class="lose"><span class="cross-icon">✗</span> Major concern</td>
+              </tr>
+              <tr data-advantage="80">
+                <td class="feat-cell">Location Flexibility</td>
+                <td class="win">Anywhere — urban, desert, arctic</td>
+                <td class="lose">Requires fertile land</td>
+              </tr>
+              <tr data-advantage="95">
+                <td class="feat-cell">Nutrient Control</td>
+                <td class="win">Precise, automated</td>
+                <td class="lose">Inconsistent, manual</td>
+              </tr>
+              <tr data-advantage="88">
+                <td class="feat-cell">Carbon Footprint</td>
+                <td class="win">Significantly lower</td>
+                <td class="lose">High — transport, machinery</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- VICTORY BANNER -->
+          <div class="victory-banner" id="victoryBanner">
+            <span class="victory-text">🏆 Hydroponics Wins: <strong>10 / 10</strong> Categories</span>
+            <div class="victory-bar"><div class="victory-fill" id="victoryFill"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ======== FAQ SECTION ======== -->
+    <section class="faq-section" id="faq">
+      <div class="section-inner">
+        <div class="reveal">
+          <span class="section-badge">Questions</span>
+          <h2 class="section-title">Frequently <span class="green">Asked</span></h2>
+          <p class="section-description">
+            Everything you need to know about getting started with hydroponics.
+          </p>
+        </div>
+
+        <div class="faq-list reveal">
+          <div class="faq-item" id="faq-1">
+            <div class="faq-question" onclick="toggleFaq('faq-1')">
+              Is hydroponics really better than soil farming?
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                For most leafy greens, herbs, and many fruiting crops — absolutely. Hydroponic systems use up to 90% less water, grow crops 2-3× faster, and eliminate the need for pesticides. They're also climate-independent, meaning you can farm 365 days a year regardless of weather conditions.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" id="faq-2">
+            <div class="faq-question" onclick="toggleFaq('faq-2')">
+              How much does it cost to start?
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                A basic home system can start at under $100. Commercial setups range from $5,000 to $500,000+ depending on scale. HydroSync offers modular kits that grow with your needs — start small, scale fast. Most growers see ROI within 6-12 months.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" id="faq-3">
+            <div class="faq-question" onclick="toggleFaq('faq-3')">
+              What crops can I grow hydroponically?
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Almost anything! Lettuce, spinach, kale, herbs (basil, mint, cilantro), tomatoes, peppers, strawberries, cucumbers, and even cannabis where legal. Some root vegetables and large fruit trees aren't practical, but the list of viable crops is growing constantly.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" id="faq-4">
+            <div class="faq-question" onclick="toggleFaq('faq-4')">
+              Do I need technical expertise?
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Not at all. Modern hydroponic systems are designed for beginners. HydroSync's starter kits come with step-by-step guides, pre-mixed nutrients, and an app that monitors your system 24/7. If you can follow a recipe, you can grow hydroponically.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" id="faq-5">
+            <div class="faq-question" onclick="toggleFaq('faq-5')">
+              Is hydroponic produce organic?
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                This depends on your region's organic certification standards. In the US, the USDA does allow hydroponic produce to be certified organic if organic-approved nutrients are used. In the EU, regulations differ. Regardless of certification, hydroponic produce is pesticide-free and nutrient-dense.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" id="faq-6">
+            <div class="faq-question" onclick="toggleFaq('faq-6')">
+              How does HydroSync help me get started?
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                HydroSync provides end-to-end hydroponic solutions: hardware kits, nutrient packs, AI-powered monitoring, and a thriving community of 50,000+ growers. We offer free onboarding sessions, 24/7 support, and a 30-day money-back guarantee.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======== AI CHATBOT ======== -->
+        <div class="ai-chat-wrapper reveal">
+          <div class="ai-chat-header">
+            <span class="ai-icon">🤖</span>
+            <h3>HydroSync AI Assistant</h3>
+            <span class="ai-status">Online</span>
+          </div>
+          <div class="ai-chat-body" id="aiChatBody">
+            <div class="ai-msg ai">Hi! I'm the HydroSync AI. Ask me anything about farming, hydroponics, or our systems!</div>
+          </div>
+          <div class="ai-chat-input-area">
+            <input type="text" id="aiChatInput" placeholder="Ask a question..." autocomplete="off" />
+            <button id="aiChatBtn">Send</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======== CTA SECTION ======== -->
+    <section class="cta-section" id="cta">
+      <div class="section-inner">
+        <div class="cta-wrapper reveal-scale">
+          <h2 class="cta-title shimmer-text">
+            Ready to Grow the Future?
+          </h2>
+          <p class="cta-description">
+            Join 50,000+ growers who chose a smarter, greener way to farm. Start your hydroponic journey with HydroSync today.
+          </p>
+          <div class="cta-actions">
+            <button class="cta-btn-primary" id="ctaJoin" onclick="showToast('🎉 Welcome aboard! Check your inbox for next steps.')">
+              🌱 Join HydroSync
+            </button>
+            <button class="cta-btn-secondary" onclick="showToast('📧 We\'ll send you everything you need to know!')">
+              📩 Get the Free Guide
+            </button>
+          </div>
+          <p class="cta-trust">
+            <span>🔒 No credit card required</span> · <span>🕐 Setup in 5 minutes</span> · <span>💚 30-day guarantee</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== FOOTER ======== -->
+    <footer class="footer" id="footer">
+      <div class="footer-inner">
+        <div>
+          <div class="nav-logo">
+            <div class="nav-logo-icon">🌱</div>
+            <span class="nav-logo-text">HydroSync</span>
+          </div>
+          <p class="footer-brand-text">
+            Pioneering the future of sustainable agriculture through innovative hydroponic solutions. Growing smarter, cleaner, and faster — for everyone.
+          </p>
+        </div>
+
+        <div>
+          <h4>Product</h4>
+          <ul class="footer-links">
+            <li><a href="#stats">Statistics</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#how">How It Works</a></li>
+            <li><a href="#compare">Comparison</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press Kit</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Support</h4>
+          <ul class="footer-links">
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Documentation</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom" style="justify-content: center;">
+        <p>© 2026 HydroSync. All rights reserved. Built with 💚 for a greener planet.</p>
+      </div>
+    </footer>
+
+  </div><!-- /main-content -->
+
+  <!-- ============ BACK TO TOP ============ -->
+  <button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</button>
+
+  <!-- ============ TOAST ============ -->
+  <div class="toast" id="toast"></div>
+
+  <!-- ============ DETAIL MODAL ============ -->
+  <div class="detail-modal-overlay" id="detailModal">
+    <div class="detail-modal-card">
+      <button class="detail-modal-close" id="detailModalClose" aria-label="Close modal">×</button>
+      <div class="detail-modal-grid">
+        <div class="detail-modal-left">
+          <div class="detail-modal-badge" id="modalBadge">Benefit 01</div>
+          <div class="detail-modal-header">
+            <span class="detail-modal-icon" id="modalIcon">🏙️</span>
+            <h2 id="modalTitle">Urban Farming Revolution</h2>
+          </div>
+          <p class="detail-modal-desc" id="modalDesc">
+            Transform abandoned warehouses, rooftops, and basements into productive farms. Grow where people live, eliminating food miles and supply chain fragility.
+          </p>
+        </div>
+        <div class="detail-modal-right">
+          <div class="detail-info-block">
+            <h4>📊 Key Statistics</h4>
+            <p id="modalStats">95% fewer transport emissions, 100% fresher produce at delivery.</p>
+          </div>
+          <div class="detail-info-block">
+            <h4>💡 Real-World Example</h4>
+            <p id="modalCase">Newark, NJ features vertical farms that grow greens inside a former steel mill, yielding millions of pounds of crops annually.</p>
+          </div>
+          <div class="detail-info-block">
+            <h4>💚 How HydroSync Helps</h4>
+            <p id="modalSolution">Our local modular hub setups enable cities to repurpose vacant lots and basements into thriving micro-farms easily.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ SCRIPT ============ -->
+  <script src="script.js"></script>
+</body>
+</html>
